@@ -20,7 +20,7 @@ then
         poetry run portray as_html --overwrite -o /out/docs
         exit 0
     fi
-elif
+elif [ -e "./Pipfile" ]
 then
     pipenv install -e .
     pipenv install portray
