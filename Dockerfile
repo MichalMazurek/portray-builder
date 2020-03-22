@@ -13,4 +13,4 @@ WORKDIR /code
 
 COPY docker-entrypoint.sh /code/
 
-CMD ["/bin/sh", "/code/docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/code/docker-entrypoint.sh"]
